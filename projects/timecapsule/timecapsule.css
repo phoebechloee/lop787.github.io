@@ -6,12 +6,6 @@
 
 body {
   margin: 0;
-  font-family: Arial;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
 }
 
 
@@ -28,6 +22,11 @@ img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.timecapsule{
+  font-family: sans-serif;
+  text-align: center;
 }
 
 }
