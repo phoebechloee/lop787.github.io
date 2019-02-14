@@ -16,5 +16,73 @@ body {
   margin: 30px auto;
   position: relative;
 }
-
 /* Your CSS goes here */
+.book-top{
+  width: 135px;
+  height: 40px;
+  transform: skew(-35deg);
+  background: #4CA4FF;
+  top: 245px;
+  left: 600px;
+  position: absolute;
+}
+
+.book-middle{
+      width: 26px;
+      height: 29px;
+      transform: rotate(270deg) skew(56deg);
+      background:#3A3E7F;
+      top: 264px;
+      left: 721px;
+      position: absolute;
+}
+.book-bottom{
+      width: 134px;
+      height: 27px;
+      background:#4C57FF;
+      top: 285px;
+      left: 586px;
+      position: absolute;
+}
+
+.vase-1{
+  width: 65px;
+  height: 110px;
+  background: #FFB64C;
+  top: 205px;
+  left: 450px;
+  position: absolute;
+}
+
+.vase-2{
+  width: 65px;
+  height: 25px;
+  background: #E3A244;
+  border-radius: 100px / 50px;
+  top: 194px;
+  left: 450px;
+  position: absolute;
+}
+
+.flower{
+      background: red;
+      width: 20px;
+      height: 20px;
+      position: relative;
+    }
+    .flower:before,
+    .flower:after {
+      content: "";
+      position: absolute;
+      height:20px;
+      width:20px;
+      top: 160px;
+      left: 460px;
+      background: red;
+    }
+    .flower:before {
+      transform: rotate(30deg);
+    }
+    .flower:after {
+      transform: rotate(60deg);
+    }
