@@ -1,0 +1,80 @@
+
+.hoverDiv1 {
+  font-family: BigCaslon;
+  src: url(BigCaslon.ttf);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hoverDiv2 {
+  font-family: BigCaslon;
+  src: url(BigCaslon.ttf);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hoverObject {
+  display: inline;
+  position: relative;
+  top: 100px;
+  z-index: -1;
+}
+
+.hoverText1 {
+  font-size: 100px;
+  visibility: hidden;
+  position: absolute;
+  top: 20px;
+}
+
+.hoverText2 {
+  font-size: 100px;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.hoverDiv:hover .hoverText {
+  visibility: visible;
+}
+
+.sidetext {
+  font-family: Avenir;
+  src: url(AvenirNextLtPro-MediumCnlt.otf);
+  font-size: 20px;
+}
+
+.side1 {
+  position: fixed;
+  left: 0 ;
+  transform: rotate(90deg);
+  padding-left: 10px;
+}
+
+.side2 {
+  transform: rotate(270deg);
+  position: fixed;
+  right: 0;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
