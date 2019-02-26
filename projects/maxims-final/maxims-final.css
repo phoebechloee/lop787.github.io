@@ -5,16 +5,19 @@
 }
 
 .side1 {
-  position: sticky;
-  left: 0 ;
+  position: fixed;
+  left: 0;
   transform: rotate(90deg);
   padding-left: 10px;
+  top: 50%;
 }
 
 .side2 {
   transform: rotate(270deg);
-  position: sticky;
+  right: 0;
+  position: fixed;
   padding-right: 10px;
+  top: 50%;
 }
 
 .gallery {
@@ -24,6 +27,7 @@
   align-items: center;
   flex-wrap: nowrap;
   margin-top: 10px;
+  size: 70%;
 }
 
 body {
