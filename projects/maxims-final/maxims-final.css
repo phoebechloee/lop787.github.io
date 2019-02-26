@@ -25,3 +25,7 @@
   flex-wrap: nowrap;
   margin-top: 10px;
 }
+
+body {
+  background-color: #C5CDE4;
+}
