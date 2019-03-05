@@ -69,6 +69,7 @@ box-shadow:
   background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
   background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
   background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+  animation-play-state: play;
 }
 
 @keyframes bounce {
@@ -104,13 +105,13 @@ box-shadow:
   }
 }
 
-.ball {
+/* .ball {
   animation-play-state: paused;
-}
+} */
 
-.ball:hover {
-  -webkit-animation: bounce 1s;
-  animation: bounce 1s;
+
+.ball {
+  animation: 1s bounce;
   animation-play-state: running;
 }
 
