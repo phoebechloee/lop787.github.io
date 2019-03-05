@@ -1,0 +1,9 @@
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.font{
+  font-weight: bold;
+  font-family: helvetica;
+}
