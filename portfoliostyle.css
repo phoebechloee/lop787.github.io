@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-h1 {
-  color: blue;
-  font-family: verdana;
-  font-size: 300%;
+body{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background: rgb(162,184,225);
+  background: linear-gradient(90deg, rgba(162,184,225,1) 0%, rgba(238,143,183,1) 33%, rgba(238,136,131,1) 59%, rgba(236,173,139,1) 100%);
 }
-p  {
+
+h1 {
+  font-family: helvetica;
+  font-size: 24px;
+}
+/* p  {
   color: brown;
   font-family: courier;
   font-size: 160%;
-}
-</style>
-</head>
-<body>
-
-</body>
-</html>
+} */
