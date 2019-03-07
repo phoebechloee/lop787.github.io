@@ -3,6 +3,12 @@ $(function() {
   $( ".button" ).click(function() {
   console.log('i clicked it');
 
-  if($('.text').toggleClass('active');
-  });
+  // if($('.text').toggleClass('active');
+  // });
+  if ($ ('.text').is(":visible") ) {
+    $('text').hide();
+  } else {
+    $('text').show();
+  }
+});
 });
