@@ -16,5 +16,15 @@
   "placeInNewYork": "the high line",
   "bodyPart": "kneecap",
   "numbers": [14, 10, 22, 35, 150, 81],
-  "foods": ["fries","fish","mashed potatoes","mangoes","salad","spring rolls","salmon sushi","brie"]
+  "foods": ["fries",
+    "fish",
+    "mashed potatoes",
+    "mangoes",
+    "salad",
+    "spring rolls",
+    "salmon sushi",
+    "brie",
+    "banana",
+    "fried chicken",
+    "meatball"]
 }
