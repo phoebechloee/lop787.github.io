@@ -1,0 +1,25 @@
+.background{
+  background-color: #fafafa;
+}
+
+.top{
+  display: flex;
+  align-self: flex-start;
+}
+
+.bottom{
+  display: flex;
+  align-self: flex-end;
+}
+
+#mydiv {
+  display: flex;
+  align-items: center;
+  z-index: 9;
+}
+
+#taliapic {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+}
