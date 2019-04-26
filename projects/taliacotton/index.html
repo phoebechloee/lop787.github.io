@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Talia Cotton</title>
-  </head>
-  <body>
-    <img class="top" src="instatop.png">
-    <img class="bottom" src="instabottom.png">
+
+<head>
+  <meta charset="utf-8">
+  <title>Talia Cotton</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:#fafafa;">
+  <img class="top img" src="instatop.png">
+  <div>
     <div id="mydiv">
-  <div id="taliapic">
-    <img src="taliapic1.png">
-    <img src="taliapic2.png">
-  </div>
-  <div id="">
-    <img src="spotted.png">
-    <img src="process.png">
-  </div>
+      <img src="taliapic1.png" id="taliapic">
+      <div id="talia">
+        <img src="taliapic2.png" id="taliamove">
+      </div>
+      <img id="accountImg" src="taliaaccount.png">
     </div>
-  </body>
+    <div id="storyDiv">
+      <div id="spotted">
+        <img class="story" id="spottedmove" src="spotted.png">
+      </div>
+      <div id="process">
+        <img class="story" id="processmove" src="process.png">
+      </div>
+    </div>
+
+    <img class="bottom img" src="instabottom.png">
+  </div>
+  <script src="talia.js"></script>
+</body>
+
 </html>
