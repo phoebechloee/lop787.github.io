@@ -1,0 +1,111 @@
+p{
+  font-style: oblique;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.one{
+  text-align: left;
+}
+
+.two{
+  text-align: right;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.artboard {
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(#000 50%, #fff 50%);
+  background-size: 100% 10px;
+  position: relative;
+  --y: 300px;
+  -webkit-animation: bgAnimate 22s linear infinite;
+          animation: bgAnimate 22s linear infinite;
+  border: 20px solid black;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  will-change: background-position;
+}
+.artboard:after, .artboard:before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(#000 50%, #fff 50%);
+  background-size: 100% 10px;
+  width: 150px;
+  height: 150px;
+  will-change: background-position;
+}
+.artboard:after {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  --y: 300px;
+  -webkit-animation: bgAnimate 22s linear infinite;
+          animation: bgAnimate 22s linear infinite;
+}
+.artboard:before {
+  background-position: 0px 5px;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  --y: 305px;
+  animation: bgAnimate 22s linear infinite reverse;
+}
+
+span {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 190px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  line-height: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+span:before, span:after {
+  content: attr(data-text);
+  position: absolute;
+  font-size: 190px;
+  top: 0;
+}
+span:before {
+  color: blue;
+  right: -5px;
+  z-index: -1;
+}
+span:after {
+  color: rgba(220, 20, 60, 0.5);
+  left: -5px;
+  z-index: -2;
+}
+
+@-webkit-keyframes bgAnimate {
+  to {
+    background-position: 100% var(--y);
+  }
+}
+
+@keyframes bgAnimate {
+  to {
+    background-position: 100% var(--y);
+  }
+}
